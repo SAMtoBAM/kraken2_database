@@ -62,7 +62,8 @@ kraken2-build --add-to-library manual_genomes/${genome} --db protozoa_plus --no-
 done
 
 ##remove any previous builds (will skip building otherwise and not add new genomes)
-rm protozoa_plus/*
+rm protozoa_plus/*.map
+rm protozoa_plus/*.k2d
 
 ##now actually compile the kraken db
 kraken2-build --build --db protozoa_plus
